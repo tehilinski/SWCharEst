@@ -1,0 +1,20 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executables
+*.exe
+*.out
+
+# backup files
+*.*~
+*.bak
+*.backup
+
+# editor project files
+*.geany
+
