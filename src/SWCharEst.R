@@ -6,7 +6,7 @@
 #'		saturated water content, and saturated hydraulic conductivity
 #'		from soil texture and organic matter.
 #'		Output units are, respectively,
-#'		volume %, volume %, volume %, cm/sec.
+#'		volume fraction, volume fraction, volume fraction, cm/sec.
 #'		Uses the equations from Saxton & Rawls, 2006.
 #'		Spreadsheet available at:
 #'		http://hydrolab.arsusda.gov/soilwater/Index.htm
@@ -61,7 +61,7 @@ SWCharEst = setRefClass( "SWCharEst",
 	    message( "  sand-fraction = sand weight fraction (0-1)" )
 	    message( "  clay-fraction = clay weight fraction (0-1)" )
 	    message( "  SOM-percent   = soil organic matter (weight %)" )
-	    message( "  Arguments can be a scalar or a vector of identical lengths." )
+	    #message( "  Arguments can be a scalar or a vector of identical lengths." )
 	    message( "Results:" )
 	    message( "  WP     = wilting point (volume %)" )
 	    message( "  FC     = field capacity (volume %)" )

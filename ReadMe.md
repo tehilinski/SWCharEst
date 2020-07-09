@@ -6,11 +6,7 @@ hydrological parameters from soil text and organic matter content
 using the method of Saxton and Rawls (2006).
 
 The implementations are in four programming languages:
-
-* C++
-* Fortran90
-* Python3
-* R
+C++, Fortran90, Python3, and R.
 
 All implementations are in object-oriented form as a class,
 or in the case of Fortran90, as a module. Each has an
@@ -41,18 +37,32 @@ Input:
 
 Results:
 
-| variable | description                      | units          |
-| -------- | -------------------------------- | -------------- |
-| WP       | wilting point                    | volume percent |
-| FC       | field capacity                   | volume percent |
-| thetaS   | saturated water content          | volume percent |
-| Ks       | saturated hydraulic conductivity | cm/sec         |
+| variable | description                      | units           |
+| -------- | -------------------------------- | --------------- |
+| WP       | wilting point                    | volume fraction |
+| FC       | field capacity                   | volume fraction |
+| thetaS   | saturated water content          | volume fraction |
+| Ks       | saturated hydraulic conductivity | cm/sec          |
 
 Each class implementation has two public methods.
 **Usage** displays the use of the class.
 **Get** returns a vector (or array or list)
 containing the results of the calculations:
 WP, FC, thetaS, Ks, in that order.
+
+## Units
+
+The units of the calculated variables in the Saxton and Rawls
+paper are volumn percent for WP, FC and thetaS, and mm/hour for Ks.
+Conversions are:
+
+* volume % = volume fraction * 100
+* mm/hour = cm/sec * 36000
+
+The R script ``tests/SaxtonRawls_Table3.R`` calculates the estimates
+for each soil texture in Saxton and Rawls (2006), table 3 using
+SWCharEst.R. The differences between table 3 and the new
+estimates are displayed. All differences are zero.
 
 
 # Citation

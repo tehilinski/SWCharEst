@@ -6,7 +6,7 @@
 !<		saturated water content, and saturated hydraulic conductivity
 !<		from soil texture and organic matter.
 !<		Output units are, respectively,
-!<		volume %, volume %, volume %, cm/sec.
+!<		volume fraction, volume fraction, volume fraction, cm/sec.
 !<		Uses the equations from Saxton & Rawls, 2006.
 !<		Spreadsheet available at:
 !<		http://hydrolab.arsusda.gov/soilwater/Index.htm
