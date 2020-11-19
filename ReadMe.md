@@ -2,14 +2,14 @@ SWCharEst
 =========
 
 SWCharEst is an implementation of an algorithm that estimates soil
-hydrological parameters from soil text and organic matter content
+hydrological parameters from soil texture and organic matter content
 using the method of Saxton and Rawls (2006).
 
 The implementations are in four programming languages:
 C++, Fortran90, Python3, and R.
 
 All implementations are in object-oriented form as a class,
-or in the case of Fortran90, as a module. Each has an
+or for Fortran90, as a module. Each has an
 accompanying test program that demonstrates the class use.
 The name of each class is **SWCharEst**.
 
@@ -19,7 +19,7 @@ At the top of each file is an explanation with usage examples.
 
 | Language  | Class File      | Test File          |
 | --------- | --------------- | ------------------ |
-| C++	    | SWCharEst.cpp/h | Test_SWCharEst.cpp |
+| C++	      | SWCharEst.cpp/h | Test_SWCharEst.cpp |
 | Fortran90 | SWCharEst.f90   | Test_SWCharEst.f90 |
 | Python3   | SWCharEst.py    | Test_SWCharEst.py  |
 | R         | SWCharEst.R     | Test_SWCharEst.R   |
